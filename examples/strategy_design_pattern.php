@@ -28,12 +28,11 @@ class LogToWebService implements Logger {
 
 class App {
 
-    public function log($data)
+    public function log($data, Logger $logger)
     {
-        $logger = new LogToFile;
         $logger->log($data);
     }
 }
 
 $app = new App;
-$app->log('We want to depend on abstractions rather than concretions');
+$app->log('We want to depend on abstractions rather than concretions', new LogToWebService);
