@@ -1,0 +1,1 @@
+/vagrant/sites/bejar.dev/app/views/boards/show.blade.php
