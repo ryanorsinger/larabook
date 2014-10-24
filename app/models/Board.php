@@ -10,4 +10,14 @@ class Board extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
+
+    public function users()
+    {
+        return $this->belongsToMany('User');
+    }
+
+    public function posts()
+    {
+        return $this->hasMany('Post');
+    }
 }
