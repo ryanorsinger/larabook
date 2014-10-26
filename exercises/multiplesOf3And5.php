@@ -8,11 +8,6 @@ echo PHP_EOL . "Find the sum of all the multiples of 3 or 5 below 1000" . PHP_EO
 
 $total = 0;
 
-function isDuplicateMultiple($number) {
-    if ($number % 15 == 0)
-        return true;
-}
-
 function isMultipleOfThree($number) {
     if ($number % 3 == 0)
         return true;
@@ -25,14 +20,8 @@ function isMultipleOfFive($number) {
 
 
 for($i=1; $i<1000; $i++) {
-
-    if (isDuplicateMultiple($i)) {
+    if (isMultipleOfThree($i) || isMultipleOfFive($i))
         $total += $i;
-    } else if (isMultipleOfThree($i)) {
-        $total += $i;
-    } else if (isMultipleOfFive($i)) {
-        $total += $i;
-    }
 }
 
 echo $total . PHP_EOL;
