@@ -33,7 +33,7 @@ class UsersTableSeeder extends Seeder {
             User::create([
             'email' => $faker->safeEmail,
             'username' => $faker->userName,
-            'password' => $faker->password,
+            'password' => $faker->phoneNumber,
             'first_name' => $faker->firstName,
             'last_name' => $faker->lastName,
             ]);
