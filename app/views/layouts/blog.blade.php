@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
-    @yield('topscript')
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  @yield('topscript')
 
   </head>
   <body>
-
-    @include('partials.navbar')
-
+  @include('partials.navbar')
 
     <div class="container">
 

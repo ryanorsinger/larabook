@@ -6,7 +6,10 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"fzaninotto/faker": "v1.3.0"
+		"laracasts/commander": "~1.0",
+		"fzaninotto/faker": "v1.3.0",
+		"zizaco/confide": "~4.0@dev",
+		"zizaco/entrust": "1.2.*@dev"
 	},
 	"require-dev": {
 	    "way/generators": "2.*",

@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('sample');
-});
+Route::get('/', 'PagesController@showHome');
