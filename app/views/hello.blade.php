@@ -1,4 +1,4 @@
-@extends('layouts.blog')
+@extends('layouts.default')
 
 @section('topscript')
 	<title>Laravel PHP Framework</title>
