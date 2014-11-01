@@ -2,7 +2,7 @@ var gulp = require('gulp');
 
 var sass = require('gulp-sass');
 
-// var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('css', function() {
     gulp.src('assets/sass/main.scss')
