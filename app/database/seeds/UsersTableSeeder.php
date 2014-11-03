@@ -21,7 +21,6 @@ class UsersTableSeeder extends Seeder {
         $user->first_name = $_ENV['USER_FIRSTNAME'];
         $user->last_name = $_ENV['USER_LASTNAME'];
         $user->save();
-        return true;
     }
 
     protected function makeFakeUsers()
