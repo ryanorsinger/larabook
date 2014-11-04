@@ -13,3 +13,10 @@
 
 Route::get('/', 'PagesController@showHome');
 
+/*
+ * Registration
+ */
+Route::get('register', [
+    'as' => 'register_path',
+    'uses' => 'RegistrationController@create'
+]);
